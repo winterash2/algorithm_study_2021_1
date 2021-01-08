@@ -34,12 +34,11 @@ public class Juneui_큰수의법칙 {
             answer += secondInput.get(i);
             j++;
             if(j == K){
-                j = 0;
                 if(secondInput.get(i + 1) < secondInput.get(i)){
                     answer += secondInput.get(i + 1);
                     count++;
-                    j++;
                 }
+                j = 0;
             }
         }
         return answer;
