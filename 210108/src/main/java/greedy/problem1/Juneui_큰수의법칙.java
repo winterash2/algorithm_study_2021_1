@@ -42,7 +42,6 @@ public class Juneui_큰수의법칙 {
                 }
             }
         }
-
         return answer;
     }
 }
