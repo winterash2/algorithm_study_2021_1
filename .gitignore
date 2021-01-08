@@ -1,0 +1,4 @@
+# 이동재
+.vscode
+*.test
+test.py
