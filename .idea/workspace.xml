@@ -90,13 +90,26 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Juneui">
+  <component name="RunManager" selected="Application.Juneui_큰수의법칙">
     <configuration name="Juneui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="greedy.Juneui" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="greedy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Juneui_큰수의법칙" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="greedy.problem1.Juneui_큰수의법칙" />
+      <module name="210108.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="greedy.problem1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,19 +124,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Juneui_큰수의법칙" />
         <item itemvalue="Application.Juneui" />
         <item itemvalue="Application.hello" />
       </list>
@@ -140,6 +156,7 @@
       <workItem from="1610073082690" duration="3602000" />
       <workItem from="1610076703654" duration="517000" />
       <workItem from="1610077224674" duration="69000" />
+      <workItem from="1610079689401" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="이준의 큰수의법칙">
       <created>1610077032241</created>
