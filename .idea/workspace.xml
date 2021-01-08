@@ -90,7 +90,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Juneui">
     <configuration name="Juneui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="greedy.Juneui" />
       <module name="algorithm.main" />
@@ -111,15 +111,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,6 +139,7 @@
       <updated>1610073079989</updated>
       <workItem from="1610073082690" duration="3602000" />
       <workItem from="1610076703654" duration="517000" />
+      <workItem from="1610077224674" duration="69000" />
     </task>
     <task id="LOCAL-00001" summary="이준의 큰수의법칙">
       <created>1610077032241</created>
@@ -149,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610077032241</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="inital commit">
+      <created>1610077249370</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610077249370</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +175,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="이준의 큰수의법칙" />
-    <option name="LAST_COMMIT_MESSAGE" value="이준의 큰수의법칙" />
+    <MESSAGE value="inital commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="inital commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="448" y="133" key="#Project_Structure" timestamp="1610073393055">
@@ -192,6 +199,10 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="432" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1610077221556" />
+    <state x="601" y="320" key="MultipleFileMergeDialog" timestamp="1610077276865">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="601" y="320" key="MultipleFileMergeDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1610077276865" />
     <state x="560" y="291" key="Vcs.Push.Dialog.v2" timestamp="1610077039156">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
