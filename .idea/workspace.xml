@@ -27,7 +27,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="726fcaf0-fa3f-4f82-9495-bb32dfa2047b" name="Default Changelist" comment="이준의 큰수의법칙" />
+    <list default="true" id="726fcaf0-fa3f-4f82-9495-bb32dfa2047b" name="Default Changelist" comment="이준의 큰수의법칙 최종">
+      <change afterPath="$PROJECT_DIR$/210108/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/210108/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/210108/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/210108/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/210108/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/210108/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/210108/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/210108/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/210108/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/210108/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/210108/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/210108/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/210108/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/210108/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/210108/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/210108/build/classes/java/main/greedy/problem1/Juneui_큰수의법칙.class" beforeDir="false" afterPath="$PROJECT_DIR$/210108/build/classes/java/main/greedy/problem1/Juneui_큰수의법칙.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +168,7 @@
       <workItem from="1610073082690" duration="3602000" />
       <workItem from="1610076703654" duration="517000" />
       <workItem from="1610077224674" duration="69000" />
-      <workItem from="1610079689401" duration="8000" />
+      <workItem from="1610079689401" duration="1015000" />
     </task>
     <task id="LOCAL-00001" summary="이준의 큰수의법칙">
       <created>1610077032241</created>
@@ -172,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610077249370</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <created>1610079773357</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610079773357</updated>
+    </task>
+    <task id="LOCAL-00004" summary="이준의 큰수의법칙 최종">
+      <created>1610079793682</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610079793682</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,37 +219,39 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="이준의 큰수의법칙" />
     <MESSAGE value="inital commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="inital commit" />
+    <MESSAGE value="test" />
+    <MESSAGE value="이준의 큰수의법칙 최종" />
+    <option name="LAST_COMMIT_MESSAGE" value="이준의 큰수의법칙 최종" />
   </component>
   <component name="WindowStateProjectService">
     <state x="448" y="133" key="#Project_Structure" timestamp="1610073393055">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="448" y="133" key="#Project_Structure/0.23.1920.1057@0.23.1920.1057" timestamp="1610073393055" />
-    <state width="1878" height="432" key="GridCell.Tab.0.bottom" timestamp="1610077221556">
+    <state width="1878" height="432" key="GridCell.Tab.0.bottom" timestamp="1610080506726">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="432" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1610077221556" />
-    <state width="1878" height="432" key="GridCell.Tab.0.center" timestamp="1610077221555">
+    <state width="1878" height="432" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1610080506726" />
+    <state width="1878" height="432" key="GridCell.Tab.0.center" timestamp="1610080506725">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="432" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1610077221555" />
-    <state width="1878" height="432" key="GridCell.Tab.0.left" timestamp="1610077221555">
+    <state width="1878" height="432" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1610080506725" />
+    <state width="1878" height="432" key="GridCell.Tab.0.left" timestamp="1610080506725">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="432" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1610077221555" />
-    <state width="1878" height="432" key="GridCell.Tab.0.right" timestamp="1610077221556">
+    <state width="1878" height="432" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1610080506725" />
+    <state width="1878" height="432" key="GridCell.Tab.0.right" timestamp="1610080506726">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="432" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1610077221556" />
+    <state width="1878" height="432" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1610080506726" />
     <state x="601" y="320" key="MultipleFileMergeDialog" timestamp="1610077276865">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="601" y="320" key="MultipleFileMergeDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1610077276865" />
-    <state x="560" y="291" key="Vcs.Push.Dialog.v2" timestamp="1610077039156">
+    <state x="560" y="291" key="Vcs.Push.Dialog.v2" timestamp="1610079796333">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="560" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1610077039156" />
+    <state x="560" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1610079796333" />
     <state x="383" y="164" key="new project wizard" timestamp="1610073337738">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
