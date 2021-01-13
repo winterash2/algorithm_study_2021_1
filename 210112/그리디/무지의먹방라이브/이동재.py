@@ -38,9 +38,50 @@ def solution(food_times, k):
 
     return answer
 """
+import timeit
 
+# 정확성: 42.9 테스트케이스 전부 통과 뜨기는 함
+# 효율성: 7.1
+# 합계: 50.0 / 100.0
 def solution(food_times, k):
-    pass
+    food_times_org = food_times
+    answer = 0
 
-print(solution([3,1,2], 5))
+    minus = 0
+    while True:
+        food_len = len(food_times)
+        if food_len == 0:
+            answer = -1
+            return answer
+        food_min = min(food_times)
+        
+        if k >= food_min * food_len:
+            food_times = [
+                food_time-food_min for food_time in food_times if food_time != food_min]
+            minus += food_min
+            k -= food_min * food_len
+        else:
+            break
 
+    k = k % len(food_times)
+
+    count = 0
+    for i, food_time in enumerate(food_times_org):
+        if food_time > minus:
+            if count == k:
+                answer = i+1
+                return answer
+            count += 1
+
+# 테스트 코드
+# start = timeit.default_timer()
+# end = timeit.default_timer()
+# print("min len 측정     %f초 걸렸습니다." % (end - start))
+
+# food_times=[4,2,3,6,7,1,5,8]
+# k=16
+# answer = 3
+food_times = [4, 2, 3, 6, 7, 1, 5, 8]
+k = 27
+# answer = 5
+print(solution(food_times, k))
