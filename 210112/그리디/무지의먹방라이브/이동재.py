@@ -38,11 +38,11 @@ def solution(food_times, k):
 
     return answer
 """
-import timeit
-
+"""
 # 정확성: 42.9 테스트케이스 전부 통과 뜨기는 함
 # 효율성: 7.1
 # 합계: 50.0 / 100.0
+
 def solution(food_times, k):
     food_times_org = food_times
     answer = 0
@@ -72,12 +72,41 @@ def solution(food_times, k):
                 answer = i+1
                 return answer
             count += 1
+"""
 
-# 테스트 코드
+
+# 깡으로 루프 돌아서하는 방법
+# 효율성까지 안 가도 시간초과 뜸
+# 정확성: 37.5
+# 효율성: 0.0
+# 합계: 37.5 / 100.0
+
+def solution(food_times, k):
+    food_times_org = food_times
+    food_len = len(food_times)
+    answer = 0
+
+    i = 0
+    while True:
+        if food_times[i % food_len] > 0:
+            food_times[i % food_len] -= 1
+            if k == 0:
+                answer = i % food_len + 1
+                break
+            else:
+                k -= 1
+        i += 1
+    return answer
+
+
+# 시간 측정
+# import timeit
 # start = timeit.default_timer()
 # end = timeit.default_timer()
 # print("min len 측정     %f초 걸렸습니다." % (end - start))
 
+
+# 테스트 케이스
 # food_times=[4,2,3,6,7,1,5,8]
 # k=16
 # answer = 3
