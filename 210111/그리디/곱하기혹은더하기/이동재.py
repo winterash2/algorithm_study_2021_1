@@ -6,9 +6,9 @@ for char in input_str:
 
 result = 0
 for i in input_list:
-    if result == 0:
-        result = i
-    elif i == 1 | i == 0:
+    if result <= 1:
+        result += i
+    elif i <= 1:
         result += i
     else:
         result *= i
