@@ -1,5 +1,6 @@
- arr = list(map(int, str(input())))
-
+arr = list(map(int, str(input())))
+# 0과 1 묶음 개수 센 뒤 적은 숫자를 뒤집는다
+# 00001100 -> 0 묶음: 2개, 1 묶음: 1개 
 total_zero = 0
 total_one = 0
 zero = 0

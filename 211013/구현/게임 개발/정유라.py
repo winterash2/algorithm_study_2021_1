@@ -4,11 +4,13 @@ x, y, current_direction = map(int, input().split())
 # 방문한 위치를 저장하기 위한 맵 생성
 d = [[0]*m for _ in range(n)]
 d[x][y] = 1
+
 # 전체 맵 정보 입력받기
 array = []
 for i in range(n):
     array.append(list(map(int, input().split())))
-
+    
+# index 0(북), 1(동), 2(남), (서)
 dx = [-1, 0, 1, 0]
 dy = [0, 1, 0, -1]
 
