@@ -21,6 +21,6 @@ for i in arr:
         else:
             one += 1
 
-print(min(total_zero, total_one))
+print(total_zero, total_one)
 
     
