@@ -10,4 +10,3 @@ for coin in coins:
     
     
 print(price)
-
