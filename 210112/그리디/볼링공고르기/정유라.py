@@ -11,6 +11,7 @@ set_data = set(data)
 
 # 경우의 수 합 1부터 n까지의 합 n*(n+1)/2
 same_weight = len(data) - len(set_data)
+print("S", len(data), len(set_data))
 combination = n*(n-1)//2 - same_weight
 
 print(combination)
