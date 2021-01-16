@@ -1,5 +1,6 @@
 import copy
 
+
 def rotate_90(m):
     N = len(m)
     ret = [[0] * N for _ in range(N)]
@@ -16,7 +17,7 @@ def verify(lock_extension_org, key, x, y, M, N):
     for i in range(M):
         for j in range(M):
             lock_extension[x+i][y+j] += key[i][j]
-    
+
     # 배열 형태로 출력하는 테스트 코드
     # for x in lock_extension:
     #     for y in x:
