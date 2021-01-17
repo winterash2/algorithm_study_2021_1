@@ -13,10 +13,8 @@ total=com(n)
 set_weight=set(weight)
 
 for i in set_weight:
-    print(i, weight.count(i))
     a=weight.count(i)
     if a!=1:
-        print(com(a))
         total=total-com(a)
     
 print(total)
