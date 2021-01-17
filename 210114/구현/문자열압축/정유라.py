@@ -45,9 +45,9 @@ def solution(s):
                 len_m += 1
                 total = ""
 
-            # 입력받은 문자열 전체가 압축할 문자열인 경우 break
-            if len_m >= len(s):
-                break
+                # 입력받은 문자열 전체가 압축할 문자열인 경우 break
+                if len_m >= len(s):
+                    break
             
             # 압축할 문자열
             for x in range(i, i+len_m):
@@ -56,6 +56,7 @@ def solution(s):
             i += len_m      # 인덱스 옮기기
             isDiff = False
 
+        # 현재 인덱스에서부터 m이 나오는지
         if s.find(m, i) == i:
             i += len_m
             count += 1
@@ -65,3 +66,4 @@ def solution(s):
     print(min_total)
     print("result", min_total_length)
     return min_total_length
+solution("xababcdcdababcdcd")
