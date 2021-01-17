@@ -14,3 +14,4 @@ else:
     result=len(arr)//2+1
 
 print(result)
+
