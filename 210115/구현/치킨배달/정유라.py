@@ -21,6 +21,7 @@ for r in range(n):
 
 candidates = list(combinations(chicken, m))
 print("c", candidates)
+
 def get_sum(candidate):
     result = 0
 
