@@ -1,10 +1,9 @@
-p = "()))((()"
+# p = "()))((()"
 
-check(p):
-    result = True
-    for i in p:
-        
+# check(p):
+#     result = True
+#     for i in p:
 
-u = ""
-v = ""
 
+# u = ""
+# v = ""
