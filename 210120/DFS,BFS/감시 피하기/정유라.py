@@ -14,7 +14,7 @@ graph = []
 #     ['X','T','X','X','X'],
 #     ['X','X','T','X','X']
 # ]
-teacher = []
+teacher = [] # 선생님들 위치
 for i in range(n):
     graph.append(list(input().split()))
     for j in range(n):
@@ -24,9 +24,9 @@ for i in range(n):
 # print("teacher ---", teacher)
 
 
+# 선생님이 학생 찾으면 True/ 못 찾으면 False
+# 방향에 따라 한 칸씩 이동하면서 확인
 def find_student(x, y, d):
-    # print("--in find_student --")
-    # print("x:",x,"y:",y,"d:",d)
     if d == 0: # 상
         while x >= 0:
             if graph[x][y] == 'O':
@@ -45,11 +45,9 @@ def find_student(x, y, d):
                 x += 1
     elif d == 2: # 좌
         while y >= 0:
-            # print("x,y:",x,y)
             if graph[x][y] == 'O':
                 return False
             elif graph[x][y] == 'S':
-                # print("여기 들어올텐데?")
                 return True
             else:
                 y -= 1
@@ -63,28 +61,28 @@ def find_student(x, y, d):
                 y += 1
     return False
     
-        
+
+# 장애물이 세 개 설치됐을 때 각 선생님들 학생 잡으러 출발
+# i : 0(상), 1(하), 2(좌), 3(우)
 def process():
     for x, y in teacher:
         for i in range(4):
-            if find_student(x, y, i):
-                # print(x,y,i)
+            if find_student(x, y, i): # 선생님이 학생 찾으면 True 반환
                 return True
+    # for문을 다 돌았다 : 못 찾았다
     return False
 
-find = False
+success = False
 def dfs(count):
-    global find
+    global success 
     if count == 3:
-        # for i in graph:
-        #     print(i)
-        if not process():
-            find = True
+        if not process(): # process가 False일 때 학생을 못 찾았다는 것이므로
+            success = True # 학생이 선생님 피하기 성공
             return                
         return 
         
         
-
+    # 장애물 설치(연구소 문제 참고함)
     for i in range(n):
         for j in range(n):
             if graph[i][j] == 'X':
@@ -95,7 +93,7 @@ def dfs(count):
                 count -= 1
     
 dfs(0)
-if find == True:
+if success == True:
     print("YES")
 else:
     print("NO")
