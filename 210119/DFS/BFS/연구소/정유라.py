@@ -10,6 +10,7 @@ dy = [0, 1, 0, -1]
 
 result = 0
 
+# dfs이용하여 바이러스 전파
 def virus(x,y):
     for i in range(4):
         nx = x + dx[i]
@@ -20,7 +21,7 @@ def virus(x,y):
                 temp[nx][ny] = 2
                 virus(nx, ny)
 
-
+# 안전한 영역 구하기
 def get_score():
     score = 0
     for i in range(n):
@@ -29,6 +30,7 @@ def get_score():
                 score += 1
     return score
 
+# dfs이용하여 울타리 3개 칠 때마다 안전한 영역 계산
 def dfs(count):
     global result
 
