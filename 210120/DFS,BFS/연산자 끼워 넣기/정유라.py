@@ -6,6 +6,7 @@ op = list(map(int, input().split()))
 MAX = -1e9
 MIN = 1e9
 
+# dfs 이용
 def dfs(numbers, index, op, result):
     global n, MIN, MAX
 
@@ -14,7 +15,7 @@ def dfs(numbers, index, op, result):
         MAX = max(MAX, result)
         MIN = min(MIN, result)
         return
-    
+    # 연산자 배열을 재귀적으로 돌면서 경우의 수를 따져본다
     for i in range(4):
         # 연산자 없으면 패스
         if op[i] == 0:

@@ -24,8 +24,8 @@ for i in range(n):
 # print("teacher ---", teacher)
 
 
-# 선생님이 학생 찾으면 True/ 못 찾으면 False
-# 방향에 따라 한 칸씩 이동하면서 확인
+# 선생님이 방향에 따라 한 칸씩 이동하면서 확인
+# 학생 찾으면 True/ 못 찾으면 False
 def find_student(x, y, d):
     if d == 0: # 상
         while x >= 0:
@@ -62,7 +62,7 @@ def find_student(x, y, d):
     return False
     
 
-# 장애물이 세 개 설치됐을 때 각 선생님들 학생 잡으러 출발
+# 각 선생님들 학생 잡으러 출발
 # i : 0(상), 1(하), 2(좌), 3(우)
 def process():
     for x, y in teacher:
@@ -73,6 +73,8 @@ def process():
     return False
 
 success = False
+# dfs를 통해 재귀적으로 반복
+# 장애물이 3개 설치될 때마다 선생님이 학생찾으러 감
 def dfs(count):
     global success 
     if count == 3:
