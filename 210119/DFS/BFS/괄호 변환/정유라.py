@@ -23,6 +23,7 @@ def change(w):
     global l, r, temp
     if len(w) == 0:
         return w
+    # u, v 나누기
     for i in range(len(w)):
         if w[i] == '(':
             l += 1
@@ -33,6 +34,7 @@ def change(w):
             v = w[i+1:]
             print("l, r", u,v)
 
+            # 올바른 문자열이면 
             if check_right(u) == True:
                 u += change(v)
             else:
@@ -42,10 +44,12 @@ def change(w):
                 temp += ")"
                 print("temp:", temp)
                 print("for문 들어가기전 u, v", u,"|",v)
-                for j in range(len(u)-2, 1, -1):
-                    print("j:", j)
-                    print("들어오면 안되지")
-                    temp += u[j]
+                for i in range(len(u)):
+                    if u[i] == '(':
+                        u[i] = ')'
+                    else:
+                        u[i] = '('
+                temp += "".join(u)
                 return temp
 
             print(u, ",", v)

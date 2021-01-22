@@ -25,15 +25,15 @@ def dfs(numbers, index, op, result):
             op[i] -= 1
             dfs(numbers, index+1, op, result + numbers[index])
             op[i] += 1
-        elif i == 1: # 뺄셈
+        if i == 1: # 뺄셈
             op[i] -= 1
             dfs(numbers, index+1, op, result - numbers[index])
             op[i] += 1
-        elif i == 2: # 곱셉
+        if i == 2: # 곱셉
             op[i] -= 1
             dfs(numbers, index+1, op, result * numbers[index])
             op[i] += 1
-        elif i == 3: # 나눗셈
+        if i == 3: # 나눗셈
             if result < 0:
                 result = -result
             op[i] -= 1
@@ -41,4 +41,5 @@ def dfs(numbers, index, op, result):
             op[i] += 1
 
 dfs(numbers, 1, op, numbers[0])
-print(MAX, MIN)
+print(MAX)
+print(MIN)

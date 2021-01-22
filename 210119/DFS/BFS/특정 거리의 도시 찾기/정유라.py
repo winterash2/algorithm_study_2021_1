@@ -1,4 +1,7 @@
 from collections import deque
+import sys
+input = sys.stdin.readline
+print = sys.stdout.write
 
 n, m, k, x = map(int, input().split())  
 graph = [[] for _ in range(n+1)]
@@ -14,6 +17,7 @@ distance[x] = 0 # 자기 위치 초기화
 
 # bfs 이용
 queue = deque([x])
+print("Q", queue)
 while queue:
     now = queue.popleft()
     
