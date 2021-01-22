@@ -1,3 +1,4 @@
+# 동재스가 참고한 코드 참고하기
 from collections import deque
 
 n, l, r = map(int, input().split())
