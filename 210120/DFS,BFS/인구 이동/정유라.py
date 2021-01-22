@@ -12,6 +12,8 @@ dy = [0, -1, 0, 1]
 
 result = 0
 
+# bfs 이용
+# 특정 위치에서 출발하여 모든 연합을 체크한 뒤에 데이터 갱신
 def check_union(x, y, index):
     united = []
     united.append((x,y))
