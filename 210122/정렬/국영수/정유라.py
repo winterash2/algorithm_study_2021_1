@@ -1,4 +1,4 @@
-# boj.kr/10825
+# https://www.acmicpc.net/problem/10825
 
 n = int(input())
 student_score = []
