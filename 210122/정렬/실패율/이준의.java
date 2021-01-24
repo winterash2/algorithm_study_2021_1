@@ -13,6 +13,7 @@ class Rate implements Comparable<Rate>{
         if(this.rate == o.rate){
             return this.index - o.index;
         }
+        // Double형을 대소비교하여 -1, 0, 1 로 반환해줌
         return Double.compare(o.rate, this.rate);
     }
 }
@@ -28,6 +29,7 @@ class Solution {
                 if(stages[i] == stage) count++;
             }
             double fail = 0.0;
+            // 해당스테이지에 도전자가 없는경우 실패율 0처리
             if(challengers != 0){
                 fail = (double) count / challengers;
             }
