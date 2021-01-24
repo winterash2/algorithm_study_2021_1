@@ -1,5 +1,6 @@
 # 내가 했던 방식
 # 방식 자체는 책에서 설명하는 방식과 동일하지만 힙큐를 쓰지 않아서 시간초과됨
+import heapq
 import sys
 input = sys.stdin.readline
 N = int(input())
@@ -7,6 +8,8 @@ cards = []
 for _ in range(N):
     cards.append(int(input()))
 #
+
+
 def insert_card(cards, number):
     for i in range(len(cards)):
         if cards[i] >= number:
@@ -31,7 +34,6 @@ print(compare)
 
 # -------------------------------------------------------------------------------
 # 책 정답 코드
-import heapq
 
 N = int(input())
 heap = []
@@ -51,12 +53,11 @@ print(compare)
 
 # -------------------------------------------------------------------------------
 # 백준 1등 코드
-import heapq, sys
 
-N, *heap = map(int, sys.stdin) # 인풋을 최대한 빠르게
+N, *heap = map(int, sys.stdin)  # 인풋을 최대한 빠르게
 result = 0
 
-heapq.heapify(heap) # 간단하게 우선순위 힙으로 만드는 법
+heapq.heapify(heap)  # 간단하게 우선순위 힙으로 만드는 법
 
 while len(heap) > 1:
     n = heapq.heappop(heap) + heapq.heappop(heap)
@@ -66,5 +67,5 @@ while len(heap) > 1:
 print(result)
 
 # 진수꺼는 매번 정렬해서 에러가 뜨는게 아니라 재귀 반복회수가 너무 많아서 에러나는 것임
-# 파이썬은 기본적으로 재귀를 1000번까지만 가능함
+# 파이썬은 기본적으로 재귀를 1000번까지만 가능함 /* 오호 새로운거 알고 갑니다 */
 # 150만번으로 수정하니까 시간초과로 뜸
