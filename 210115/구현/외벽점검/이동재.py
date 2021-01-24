@@ -1,9 +1,19 @@
 from itertools import permutations
 from pprint import pprint as pprint
 
+
+def solution(n, weak, dist):
+    answer = 0
+    len_weak = len(weak)
+    
+
+    return answer
+
+
 # 1차 시도 - 책 안 보고
 # 2배로 늘린다는 아이디어를 파이썬에서는 리스트를 -n~n-1 로 반복할 수 있다는 점을 사용하려고 했는데
-# 그냥 개 어려워지긴 함... 실패...
+# 그냥 개 어려워지기만 함... 실패...
+"""
 def solution(n, weak, dist):
     answer = 0
     weak_len = len(weak)
@@ -44,7 +54,7 @@ def solution(n, weak, dist):
                     break
     answer = min_friend
     return answer
-
+"""
 
 n, weak, dist, result = 12, [1, 5, 6, 10], [1, 2, 3, 4], 2
 print(solution(n, weak, dist))
