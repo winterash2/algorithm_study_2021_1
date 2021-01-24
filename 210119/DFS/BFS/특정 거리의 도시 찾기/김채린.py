@@ -10,7 +10,6 @@ for _ in range(m):
     road_info[a].append(b)
 
 
-
 distance=[-1]*(n+1)
 distance[x]=0
 
