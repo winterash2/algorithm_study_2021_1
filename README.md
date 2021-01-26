@@ -1,10 +1,10 @@
 <center>
 <h1> 갓동빈과 함께하는 코테마스터 오대장</h1> 
 <blockquote>코테 마스터를 향한 알고리즘 스터디</blockquote>
-<br> 📌 START  |  2021-01-08 
-<br> 📚 Book   |  이것이 코딩 테스트다
-<br> 💻 People |  채린, 진수, 동재, 준의, 유라
-
+<br> 📌 START 2021-01-08 
+<br> 📚 Book 이것이 코딩 테스트다
+<br> 💻 People 채린, 진수, 동재, 준의, 유라
+</center>
 
 <br>
 <br>
@@ -42,4 +42,4 @@
 |    |ch07<br>이진탐색|ch15<br>이진탐색|ch08<br>다이나믹프로그래밍|      |      |      |
 | 31 |
 |    |
-</center>
+
