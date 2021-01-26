@@ -30,55 +30,16 @@
 
 <br>
 
- <table style="border: 1px; width:100%; height: 100px; text-align: center;">
-	<th>SUN</th>
-	<th>MON</th>
-    <th>TUE</th>
-    <th>WED</th>
-    <th>THU</th>
-    <th>FRI</th>
-    <th>SAT</th>
-    <tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr>
-    <tr>
-        <td></td>
-        <td>ch11<br>그리디</td>
-        <td>ch11<br>그리디</td>
-        <td>ch04<br>구현</td>
-        <td>ch12<br>구현</td>
-        <td>ch12<br>구현</td>
-        <td></td></tr>
-    <tr>
-        <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>ch05<br>DFS/BFS</td>
-        <td>ch13<br>DFS/BFS</td>
-        <td>ch13<br>DFS/BFS</td>
-        <td>ch06<br>정렬</td>
-        <td>ch14<br>정렬</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>24</td>
-        <td>25</td>
-        <td>26</td>
-        <td>27</td>
-        <td>28</td>
-        <td>29</td>
-        <td>30</td>
-    </tr>
-        <tr><td></td>
-        <td>ch07<br>이진탐색</td>
-        <td>ch15<br>이진탐색</td>
-        <td>ch08<br>다이나믹<br>프로그래밍</td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-        <tr><td>31</td>
-    </tr>
-    <tr>
-        <td></td>
-    </tr>
-</table>
+|　 SUN　 |　 MON　 |　 TUE　 |　 WED　 |　 THU　 |　 FRI　 |　 SAT　 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|    3    |    4    |    5    |    6    |    7    |    8    |    9    |
+|   |   |   |   |   |ch03<br>그리디||
+| 10 |      11      |      12      |     13     |    14     |     15     | 16 |
+|    |ch11<br>그리디|ch11<br>그리디|ch04<br>구현|ch12<br>구현|ch12<br>구현|    |
+| 17 |      18       |      19       |      20       |     21     |     22     |23|
+|    |ch05<br>DFS/BFS|ch13<br>DFS/BFS|ch13<br>DFS/BFS|ch06<br>정렬|ch14<br>정렬|  |
+| 24 |      25        |       26       |         27              |  28  |  29  |  30  |
+|    |ch07<br>이진탐색|ch15<br>이진탐색|ch08<br>다이나믹<br>프로그래밍|      |      |      |
+| 31 |
+|    |
+
