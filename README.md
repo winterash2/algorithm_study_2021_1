@@ -30,7 +30,7 @@
 
 <br>
 
-|　 SUN　 |　 MON　 |　 TUE　 |　 WED　 |　 THU　 |　 FRI　 |　 SAT　 |
+|　  SUN　  |　  MON　  |　  TUE　  |　  WED　  |　  THU　  |　  FRI　  |　  SAT　  |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |    3    |    4    |    5    |    6    |    7    |    8    |    9    |
 |   |   |   |   |   |ch03<br>그리디||
