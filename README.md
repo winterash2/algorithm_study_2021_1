@@ -1,6 +1,10 @@
 # algorithm_study_2021_1
 2021년 1월 시작한 알고리즘 스터디(채린, 진수, 동재, 준의, 유라)
+<a href="https://github.com/winterash2/algorithm_study_2021_1/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=winterash2/algorithm_study_2021_1" />
+</a>
 
+Made with [contributors-img](https://contrib.rocks).
 
 2021-01-08-CH3-그리디-p86-p102
 
