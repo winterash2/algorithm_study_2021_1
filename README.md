@@ -30,19 +30,6 @@
 
 <br>
 
-|　SUN　|　MON　|　TUE　|　WED　|　THU　|　FRI　|　SAT　|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|           3|            4|           5|           6|           7|            8|           9|
-|   |   |   |   |   |ch03<br>그리디||
-| 10 |      11      |      12      |     13     |    14     |     15     | 16 |
-|    |ch11<br>그리디|ch11<br>그리디|ch04<br>구현|ch12<br>구현|ch12<br>구현|    |
-| 17 |      18       |      19       |      20       |     21     |     22     |23|
-|    |ch05<br>DFS/BFS|ch13<br>DFS/BFS|ch13<br>DFS/BFS|ch06<br>정렬|ch14<br>정렬|  |
-| 24 |      25        |       26       |         27              |  28  |  29  |  30  |
-|    |ch07<br>이진탐색|ch15<br>이진탐색|ch08<br>다이나믹<br>프로그래밍|      |      |      |
-| 31 |
-|    |
-
  <table style="border: 1px; width:100%; height: 100px; text-align: center;">
 	<th>SUN</th>
 	<th>MON</th>
