@@ -39,7 +39,7 @@
 | 17 |      18       |      19       |      20       |     21     |     22     |23|
 |    |ch05<br>DFS/BFS|ch13<br>DFS/BFS|ch13<br>DFS/BFS|ch06<br>정렬|ch14<br>정렬|  |
 | 24 |      25        |       26       |         27              |  28  |  29  |  30  |
-|    |ch07<br>이진탐색|ch15<br>이진탐색|ch08<br>다이나믹<br>프로그래밍|      |      |      |
+|    |ch07<br>이진탐색|ch15<br>이진탐색|<a href="https://github.com/winterash2/algorithm_study_2021_1/tree/master/210127/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">ch08<br>다이나믹<br>프로그래밍</a>|      |      |      |
 | 31 |
 |    |
 
