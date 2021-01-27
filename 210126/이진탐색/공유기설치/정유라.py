@@ -6,7 +6,7 @@
 
 
 n, c = 5, 3
-houses = [2, 5, 8, 6, 9]
+houses = [1, 2, 8, 4, 9]
 # house_point = []
 # for _ in range(n):
 #     house_point.append(int(input()))
@@ -14,10 +14,10 @@ houses = [2, 5, 8, 6, 9]
 houses.sort()
 
 
-
-
-start = houses[1] - houses[0] # 첫 집과 그 다음집 사이 거리
-end = houses[-1] - houses[0] # 집의 좌표가 가장 큰 집과 첫 집 사이 거리
+# 갓동빈 어찌된거애오..
+# 동재코드 참고링 
+start = 1 
+end = (houses[-1] - houses[0]) // (c-1) + 1
 print(start, end)
 # sort후 houses
 # 2, 5, 6, 8, 9
