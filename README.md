@@ -11,15 +11,15 @@
 <br>
 
 <a href="https://github.com/zzerii">
-<img src = "./img/채린.png" width="15%" /></a>
+<img src = "https://user-images.githubusercontent.com/37285946/106130812-2c8f0280-61a5-11eb-968c-2cdff9049eb0.png" width="15%" /></a>
 <a href="https://github.com/baejinsoo">
-<img src = "./img/진수.png" width="15%" /></a>
+<img src = "https://user-images.githubusercontent.com/37285946/106130808-2b5dd580-61a5-11eb-8c54-b8fbfcca6a22.png" width="15%" /></a>
 <a href="https://github.com/winterash2">
-<img src = "./img/동재.png" width="15%" /></a>
+<img src = "https://user-images.githubusercontent.com/37285946/106130814-2d279900-61a5-11eb-9f8a-d2d59d734c2e.png" width="15%" /></a>
 <a href="https://github.com/coconutstd">
-<img src = "./img/준의.png" width="15%" /></a>
+<img src = "https://user-images.githubusercontent.com/37285946/106130818-2dc02f80-61a5-11eb-96ea-ddd58da70802.png" width="15%" /></a>
 <a href="https://github.com/jungyr24">
-<img src = "./img/유라.png" width="15%" /></a>
+<img src = "https://user-images.githubusercontent.com/37285946/106130816-2d279900-61a5-11eb-9cd0-f62ba5205dc8.png" width="15%" /></a>
 
 <br>
 <br>
