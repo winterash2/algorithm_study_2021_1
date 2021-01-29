@@ -17,8 +17,6 @@ for i in range(1, X, 1):
 # print(dp_table)
 print(dp_table[X])
 
-# 유라꺼 32000 입력하면 IndexError: list assignment index out of range 에러 뜸
-
 
 # 백준에서 찾은 훨씬 빠른 예시
 # dict를 이용해서 훨씬 빠르게 품
