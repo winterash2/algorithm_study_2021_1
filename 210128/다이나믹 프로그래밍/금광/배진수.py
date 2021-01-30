@@ -5,7 +5,6 @@ y_mining = [1, 1, 1]
 
 def mining(res, times, n, m, x, y):
     global gold_mine, result
-    print(x,y,times,res)
     if times == m:
         result = max(res, result)
         # print(res)
