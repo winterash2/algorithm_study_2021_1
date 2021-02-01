@@ -1,3 +1,22 @@
+# 이진탐색을 이용한 최장 증가 부분 수열 (LIS : Longest Increasing Subsequence) 구하기
+# 책에 있는 방식 916ms, 이 방식 68ms
+import bisect
+N = int(input())
+soldiers = list(map(int, input().split()))
+soldiers.reverse()
+
+dp = []
+dp.append(soldiers[0])
+
+for soldier in soldiers:
+    if soldier > dp[-1]:
+        dp.append(soldier)
+    else:
+        index = bisect.bisect_left(dp, soldier)
+        dp[index] = soldier
+print(N-len(dp))
+
+"""
 N = int(input())
 soldiers = list(map(int, input().split()))
 
@@ -14,3 +33,5 @@ for i in range(1, N, 1):
             dp[i] = max(dp[i], dp[j]+1)
 
 print(N - max(dp))
+"""
+
