@@ -19,7 +19,7 @@
 <a href="https://github.com/coconutstd">
 <img src = "https://user-images.githubusercontent.com/37285946/106130818-2dc02f80-61a5-11eb-96ea-ddd58da70802.png" width="15%" /></a>
 <a href="https://github.com/jungyr24">
-<img src = "https://user-images.githubusercontent.com/37285946/106130816-2d279900-61a5-11eb-9cd0-f62ba5205dc8.png" width="15%" /></a>
+<img src = "https://user-images.githubusercontent.com/37285946/106497518-7eb38900-6501-11eb-8f01-737abbf1ac1c.png" width="15%" /></a>
 
 <br>
 <br>
