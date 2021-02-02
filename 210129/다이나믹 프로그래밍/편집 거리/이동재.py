@@ -1,12 +1,12 @@
-# str1 = list(input())
-# str2 = list(input())
+base = list(input())
+goal = list(input())
 
 INF = float("INF")
 
-base = list("sunday")
-goal = list("saturday")
-base = list("cut")
-goal = list("cat")
+# base = list("sunday")
+# goal = list("saturday")
+# base = list("cut")
+# goal = list("cat")
 
 
 dp = [[INF for _ in range(len(goal))] for _ in range(len(base))]
