@@ -3,9 +3,9 @@ list_3 = [3]
 list_5 = [5]
 
 for i in range(900):
-    list_2.append(list_2[0]*(i+2))
-    list_3.append(list_3[0]*(i+2))
-    list_5.append(list_5[0]*(i+2))
+    list_2.append(2*(i+2))
+    list_3.append(3*(i+2))
+    list_5.append(5*(i+2))
 
 res = [1]
 res = res + list_2 + list_3 + list_5
@@ -14,4 +14,6 @@ result = set(res)
 a = list(result)
 
 n = int(input())
-print(a[n-1])
+# print(a[n-1])
+for i in range(n):
+    print(list_2[i] ,end=" ")
