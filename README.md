@@ -2,7 +2,7 @@
 <h1> 갓동빈과 함께하는 코테마스터 오대장</h1> 
 <blockquote>코테 마스터를 향한 알고리즘 스터디</blockquote>
 <br> 📌 START 2021-01-08 
-  <br> 📚 Book 이것이 코딩 테스트다 정답 >> <a href="https://github.com/ndb796/python-for-coding-test">갓동빈코드</a>
+  <br> 📚 Book 이것이 코딩 테스트다 | 정답 >> <a href="https://github.com/ndb796/python-for-coding-test">갓동빈코드</a>
 <br> 💻 People 채린, 진수, 동재, 준의, 유라
 </center>
 
