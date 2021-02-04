@@ -36,7 +36,7 @@ def dijkstra(start):
 dijkstra(1)
 result = []
 count = 0
-max_d = 0
+max_d = 0 # 최단거리 노드들 중에 제일 먼곳 
 index = 1e9
 for i in range(1, n+1):
     if distance[i] != INF and distance[i] != 0:
@@ -48,6 +48,7 @@ for i in range(1, n+1):
 print(distance)
 print(index+1, max_d, count)
 # 없는 0번째 인덱스는 제외해야함
+# 결과 : [1000000000, 0, 1, 1, 2, 2, 2]
 """
 6 7        
 3 6

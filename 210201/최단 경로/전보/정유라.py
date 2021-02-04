@@ -1,3 +1,4 @@
+# 다익스트라 알고리즘 
 import sys
 import heapq
 input = sys.stdin.readline
@@ -14,7 +15,8 @@ for i in range(m):
     graph[x].append((y, message_time))
 
 
-def daikjstra(start):
+def dijkstra(start):
+    # 우선순위 큐 사용
     distance[start] = 0
     # visited[start] = True
     q = []
@@ -45,11 +47,11 @@ def daikjstra(start):
     #         if cost < distance[j[0]]:
     #             distance[j[0]] = cost
     
-daikjstra(start)
+dijkstra(start)
 count = 0
 max_m_time = -1e9
 for i in range(1, n+1):
-    if distance[i] != INF and i != start:
+    if distance[i] != INF and i != start: # 시작노드도 빼주기
         count += 1
         max_m_time = max(distance[i], max_m_time)
             

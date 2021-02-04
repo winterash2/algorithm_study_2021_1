@@ -1,6 +1,21 @@
 # 플로이드 워셜
-# n = int(input())    
-# m = int(input())
+
+# 초기화 및 간선 정보 입력 받기
+n = int(input())    
+m = int(input())
+INF = int(1e9)
+graph = [[INF]*(n+1) for _ in range(n+1)]
+
+# 자기 자신으로 갈 때 0으로 초기화
+for a in range(n+1):
+    for b in range(n+1):
+        if a == b:
+            graph[a][b] = 0
+
+for i in range(m):
+    a, b, c = map(int, input().split())
+    if graph[a][b] > c:  # 최소거리 갱신: INF로 초기화해줬으니 비교해서 c값 넣으면 됨
+        graph[a][b] = c
 """
 1 2 2
 1 3 3
@@ -17,20 +32,7 @@
 3 4 2
 5 2 4
 """
-INF = int(1e9)
-n, m = 5, 14
-graph = [[INF]*(n+1) for _ in range(n+1)]
-
-for a in range(n+1):
-    for b in range(n+1):
-        if a == b:
-            graph[a][b] = 0
-
-for i in range(m):
-    a, b, c = map(int, input().split())
-    if graph[a][b] > c:  # 최소거리 갱신: INF로 초기화해줬으니 비교해서 c값 넣으면 됨
-        graph[a][b] = c
-
+# 플로이드 워셜
 for k in range(1, n+1):
     for a in range(1, n+1):
         for b in range(1, n+1):
