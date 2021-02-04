@@ -38,10 +38,14 @@ for k in range(1, n+1):
         for b in range(1, n+1):
             graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
 
+# for i in range(1, n+1):
+#     for j in range(1, n+1):
+#         if graph[i][j] == INF:
+#             print("0", end=" ")
+#         else:
+#             print(graph[i][j], end=" ")
+#     print()
+
+## 배열 출력 편하게하는 방봅
 for i in range(1, n+1):
-    for j in range(1, n+1):
-        if graph[i][j] == INF:
-            print("0", end=" ")
-        else:
-            print(graph[i][j], end=" ")
-    print()
+    print(*graph[i][1:])
