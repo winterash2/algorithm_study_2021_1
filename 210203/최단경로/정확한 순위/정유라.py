@@ -18,7 +18,6 @@ for k in range(1, n+1):
             graph[i][j] = min(graph[i][j], graph[i][k]+graph[k][j])
 
 
-## 여기 이해 안 감
 result = 0
 for i in range(1, n+1):
     count = 0
