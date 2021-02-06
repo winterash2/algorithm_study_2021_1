@@ -24,10 +24,10 @@ for i in range(m):
 
 citys.sort()
 res = 0
-cnt = 0
+cnt = 1
 for city in citys:
     cost, a, b = city
-    if cnt == n - 2:
+    if cnt == n - 1:
         break
     if find_parent(parent,a) != find_parent(parent,b):
         union_parent(parent, a, b)
