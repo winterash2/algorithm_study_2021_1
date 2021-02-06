@@ -15,7 +15,7 @@ def union_parent(parent, a, b):
         parent[a] = b
 
 n, m = map(int, input().split())
-parent = [i for i in range(m+1)]
+parent = [i for i in range(n+1)]
 
 citys = []
 for i in range(m):
@@ -24,10 +24,10 @@ for i in range(m):
 
 citys.sort()
 res = 0
-cnt = 1
+cnt = 0
 for city in citys:
     cost, a, b = city
-    if cnt == n - 1:
+    if cnt == n - 2:
         break
     if find_parent(parent,a) != find_parent(parent,b):
         union_parent(parent, a, b)
