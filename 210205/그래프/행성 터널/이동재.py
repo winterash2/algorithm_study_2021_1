@@ -1,3 +1,5 @@
+# 모든 간선을 고려하는 경우임
+# 메모리 부족으로 실패함
 import sys
 input = sys.stdin.readline
 
