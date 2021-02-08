@@ -1,3 +1,6 @@
+# >> 우선순위 큐 안 써도 될듯
+# x, y, z 따로 받아서 정렬후 하나씩 append하면 각각 제일 작은 값이 들어가기 때문에 우선순위큐 안 써도댐
+
 # 최소 신장 트리 만들기
 # 크루스칼 알고리즘 288page
 
@@ -43,11 +46,11 @@ for i in range(n):
 
 
 q = [] 
-
+# q에 들어가는 값: (i번째-i+1번째 행성x좌표값차이 절대값, i번째행성번호, i+1번째행성번호)
 # x를 기준으로 정렬
 planet.sort(key=lambda x:x[1])
 for i in range(n-1):
-    heapq.heappush(q, [abs(planet[i][1]-planet[i+1][1]), planet[i][0], planet[i+1][0]])     # q에 들어가는 값: (i번째-i+1번째 행성x좌표값차이 절대값, i번째행성번호, i+1번째행성번호)
+    heapq.heappush(q, [abs(planet[i][1]-planet[i+1][1]), planet[i][0], planet[i+1][0]])     
 
 # y를 기준으로 정렬
 planet.sort(key=lambda x:x[2])

@@ -40,7 +40,7 @@ for i in range(n):
 
 city = list(map(int, input().split()))
 for i in range(n):
-    for j in range(n):
+    for j in range(n): # for j in range(i+1, n): 양방향 그래프니까 이렇게 하면 절반으로 줄일 수 있다
         if input_data[i][j] == 1:
             union_parent(parent, i+1, j+1)
 
