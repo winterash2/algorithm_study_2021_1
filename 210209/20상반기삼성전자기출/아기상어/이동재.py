@@ -3,11 +3,10 @@ graph = []
 for _ in range(N):
     graph.append(list(map(int, input().split())))
 baits = []
-x_shark = 0
-y_shark = 0
+x_shark, y_shark = 0, 0
 for i in range(N):
     for j in range(N):
-        if 0 < graph[i][j] < 6:
+        if graph[i][j] > 0 and graph[i][j] < 6:
             baits.append((i, j))
         if graph[i][j] == 9:
             x_shark = i
@@ -29,7 +28,7 @@ def update_all_distance(baits, x, y, size_shark):
 time = 0
 size_shark = 2
 count_eat = 0
-while baits:
+while True:
     if len(baits) == 0:
         break
     can_baits = update_all_distance(baits, x_shark, y_shark, size_shark)

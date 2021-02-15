@@ -39,13 +39,13 @@ def bfs(x, y):
                 graph2[nx][ny] = graph2[x][y] + 1
                 queue.append((nx, ny))
                 
-              
+            
     return graph2
 total_time = 0
 eat_fish_x, eat_fish_y = x, y
 while True:
     after_one_step_bfs = bfs(eat_fish_x, eat_fish_y)
-   
+
     min_dist = 1e9
     for i in range(n):
         for j in range(n):
@@ -59,7 +59,7 @@ while True:
         break
     else:
         graph[eat_fish_x][eat_fish_y] = 0 # 먹었으니 0 처리
-       
+    
         total_time += after_one_step_bfs[eat_fish_x][eat_fish_y]
         growing += 1
         if me == growing:  # 이거 내 코드에서 갓동빈코드처럼 >= 하면 틀렸습니다 뜨던데 왜그렇지..?
