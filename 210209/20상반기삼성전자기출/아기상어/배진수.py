@@ -1,8 +1,8 @@
 import sys
 input = sys.stdin.readline
 
-mx = [-1, 1, 0, 0]
-my = [0, 0, 1, -1]
+mx = [-1, 0, 0, 1]
+my = [0, -1, 1, 0]
 
 def check(arr):
     for i in range(n):
@@ -20,6 +20,7 @@ def bfs(x, y, q, time, shark, moved, eat):
         # arr[x][y] = 0
         count = min(count, time)
         q.append((time, x, y, eat, shark))
+        return
 
     else:
         for i in range(4):
@@ -46,6 +47,7 @@ def bfs(x, y, q, time, shark, moved, eat):
                     time -= 1
                     moved.remove((dx, dy))
                     eat -= 1
+    return
 
 
 n = int(input())
@@ -66,6 +68,8 @@ time = 0
 shark = 2
 eat = 0
 while 1:
+    print("----------")
+    print(time,x,y,shark)
     if check(arr) == True:
         break
     if shark == eat:
@@ -79,6 +83,7 @@ while 1:
     if len(q) == 0:
         break
     else:
+        print(q)
         q.sort()
         time, tx, ty, eat, shark = q[0]
         arr[tx][ty] = 0
