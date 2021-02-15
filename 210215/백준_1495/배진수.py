@@ -58,3 +58,4 @@ for i in range(max_v+1):
     if dp[n][i]:
         result = i
 print(result)
+print(*dp)

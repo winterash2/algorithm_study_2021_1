@@ -17,9 +17,10 @@ mx = [-1, -1, -1, 0, 1, 0, 1, 1]
 my = [-1, 0, 1, 1, 1, -1, 0, -1]
 
 
-def bfs(x, y):
+def bfs(x, y, visited):
     q = deque()
     q.append((x, y))
+    visited.append((x, y))
     dist = 0
     while q:
         dist += 1
@@ -29,11 +30,14 @@ def bfs(x, y):
                 dx = x + mx[k]
                 dy = y + my[k]
                 if 0 <= dx < n and 0 <= dy < m:
+                    if (dx,dy) in visited:
+                        continue
                     if arr[dx][dy] == 1:
                         return dist
                     else:
                         q.append((dx, dy))
-    return
+                        visited.append((x, y))
+    return 0
 
 safe_dist = 0
 if shark == 0:
@@ -41,7 +45,8 @@ if shark == 0:
 else:
     for i in range(n):
         for j in range(m):
-            if arr[i][j] == 0:
-                res = bfs(i,j)
+            if arr[i][j] == 1:
+                visited = []
+                res = bfs(i,j,visited)
                 safe_dist = max(safe_dist, res)
     print(safe_dist)
