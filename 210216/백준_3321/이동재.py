@@ -1,3 +1,8 @@
+# 의외로 되게 쉬운 문제임
+# 다만 python에서는 입력이 제대로 안 되고 에러가 계속 나는게 테스트셋이 이상하거나 뭔가 이상한 듯
+# pypy3에서도 그냥 input=sys.stdin.readline 이거만 하면 에러남
+# 아래와 같이 sys.stdin.readline().rstrip() 이거처럼 rstrip도 해줘야 함
+
 # from pprint import pprint
 # import copy
 import sys
