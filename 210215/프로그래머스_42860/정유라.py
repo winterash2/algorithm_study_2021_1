@@ -11,6 +11,7 @@ print(name)
 # 26 - index > index 
 # A: 65
 
+# 해당 알파벳을 만들기 위해 조작해야하는 횟수로 저장
 convert_alpha = []
 for i in name:
     alpha_value = ord(i)-65
@@ -20,6 +21,8 @@ for i in name:
         convert_alpha.append(26-alpha_value)
 
 print("conver:", convert_alpha)
+
+# 근처에 A가 많을 수록 A가 가는 방향으로 가면(이미 맞춰진 알파벳인 경우도) 이동거리가 더 나오기때문
 
 # 오른쪽으로 가면서 A가 아닌 알파벳 자리 찾기
 def find_right_not_zero(idx, convert_alpha):
@@ -55,7 +58,7 @@ total = 0   # 총 조작 횟수
 while True:
     # 알파벳 만들기
     total += convert_alpha[idx]
-    convert_alpha[idx] = 0
+    convert_alpha[idx] = 0 # 만들고 나면 0으로 바꿔주기
     print("-------total:", total, "idx:", idx)
 
     # 모두 0인지 확인

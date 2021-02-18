@@ -25,6 +25,8 @@ def bfs(d, x, y):
     check[x][y] = 1
     while q:
         d, x, y = q.popleft()
+
+        # 상어를 만나면 d 반환하며 함수 끝내기
         if graph[x][y] == 1:
             return d
         for i in range(8):
@@ -42,6 +44,7 @@ def bfs(d, x, y):
     return d
 
 max_ = 0
+# 모든 좌표에 대해서 검사
 for i in range(n):
     for j in range(m):
         max_ = max(max_, bfs(0, i, j))
