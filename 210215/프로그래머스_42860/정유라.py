@@ -31,7 +31,8 @@ def find_right_not_zero(idx, convert_alpha):
     
 
     while True:
-        if idx >= len(convert_alpha): # 배열 끝에서 오른쪽으로 갔을 때
+        # >> 파이썬에서는 arr[-1]이면 알아서 맨 끝 원소이므로 이 처리 안 해줘도됨
+        if idx >= len(convert_alpha): # 배열 끝에서 오른쪽으로 갔을 때 
             idx -= len(convert_alpha)
             
         if convert_alpha[idx] != 0:
