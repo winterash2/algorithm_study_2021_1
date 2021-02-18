@@ -18,7 +18,7 @@ def solution(name):
         right_count = i
 
         if left_count < right_count:
-            idx += left_count
+            idx -= left_count
             answer += left_count + countList[idx]
         else:
             idx += right_count
