@@ -31,8 +31,8 @@ def find_right_not_zero(idx, convert_alpha):
     
 
     while True:
-        if idx >= len(convert_alpha):
-            return idx, -1
+        if idx >= len(convert_alpha): # 배열 끝에서 오른쪽으로 갔을 때
+            idx -= len(convert_alpha)
             
         if convert_alpha[idx] != 0:
             return idx, cnt
@@ -44,7 +44,7 @@ def find_left_not_zero(idx, convert_alpha):
     cnt = 1
     idx -= 1
     while True:
-        if idx < 0:
+        if idx < 0: # 배열 맨 앞에서 왼쪽
             idx += len(convert_alpha)
         if convert_alpha[idx] != 0:
             return idx, cnt
@@ -70,13 +70,7 @@ while True:
     current_ridx, r_not_zero_cnt = find_right_not_zero(idx, convert_alpha)
     current_lidx, l_not_zero_cnt = find_left_not_zero(idx, convert_alpha)
     
-    # 오른쪽으로 가다가 0이 아닌 알파벳 못 찾고 배열 끝까지 갔을 때(예외)
-    if r_not_zero_cnt == -1:
-        print("오른쪽 방향 idx == convert_alpha : -1일떄")
-        idx = current_lidx
-        total += l_not_zero_cnt
-        continue
-    
+  
     if l_not_zero_cnt < r_not_zero_cnt:
         print("l<r 왼쪽으로 이동")
         idx = current_lidx
