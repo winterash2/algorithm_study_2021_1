@@ -39,6 +39,7 @@ public class 숨바꼭질2 {
             if(check){
                 break;
             }
+
             time++;
         }
         System.out.println(time);
