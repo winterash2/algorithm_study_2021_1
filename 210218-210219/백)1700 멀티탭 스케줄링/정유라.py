@@ -1,4 +1,6 @@
 # http://boj.kr/1700
+# 실패 ㅠㅠ
+
 n, m = map(int, input().split())
 
 plugs = list(input().split())
