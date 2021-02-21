@@ -1,3 +1,5 @@
+# http://boj.kr/1766
+# 힙을 이용한 위상 정렬 알고리즘 
 import heapq
 
 v, e = map(int, input().split())
