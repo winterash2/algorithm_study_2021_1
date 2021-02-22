@@ -34,6 +34,7 @@ print(sum(arr)) # 이런 방법이..
 
 
 # 메모리초과 
+# 소수 제곱근 끼리의 최소공배수 ex)4, 9 => 36 두번 빠짐 
 
 # def is_prime_number(n):
 #     new_n = int(math.sqrt(n))
