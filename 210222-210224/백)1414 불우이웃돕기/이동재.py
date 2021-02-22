@@ -1,6 +1,3 @@
-import heapq
-
-
 def alphaToInt(a):
     if a == '0':
         return 0
@@ -39,12 +36,11 @@ for i in range(N):
             answer += alphaToInt(graph[i][j])
         elif graph[i][j] != '0':
             q.append((alphaToInt(graph[i][j]), i, j))
+q.sort()
 
 parent = [i for i in range(N)]
-heapq.heapify(q)
 
-while q:
-    l, a, b = heapq.heappop(q)
+for l, a, b in q:
     if find(parent, a) != find(parent, b):
         union(parent, a, b)
     else:
