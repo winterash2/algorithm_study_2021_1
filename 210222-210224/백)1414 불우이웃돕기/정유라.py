@@ -50,7 +50,7 @@ for i in range(v):
         if 'A' <= cost <= 'Z':
             convert_cost = ord(cost) - 38
             total += convert_cost
-        if cost == 0 or i == j:
+        if cost == "0" or i == j:  # 문자열 "0" 조심
             continue
         edges.append((convert_cost, i, j))
 
