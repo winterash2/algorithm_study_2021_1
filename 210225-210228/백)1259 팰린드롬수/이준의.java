@@ -12,9 +12,8 @@ public class 팰린드롬수 {
             String input = br.readLine();
             if(input.charAt(0) == '0') break;
             int left = 0, right = input.length() - 1;
-            int iter = input.length() % 2 == 0 ? input.length() / 2 : input.length() / 2 + 1;
             boolean check = true;
-            for(int i = 0; i < iter; ++i){
+            for(int i = 0; i < input.length() / 2; ++i){
                 if(input.charAt(left) != input.charAt(right)){
                     System.out.println("no");
                     check = false;
