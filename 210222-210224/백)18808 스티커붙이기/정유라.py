@@ -23,6 +23,7 @@ def stick_to_laptop(rotate):
     if rotate:
         result = []
         for l in zip(*sticker):
+            print(">", l)
             result.append(list(reversed(l)))
         sticker = copy.deepcopy(result)
         c, r = len(sticker), len(sticker[0])  # 회전됐으므로 r, c 값 재설정
