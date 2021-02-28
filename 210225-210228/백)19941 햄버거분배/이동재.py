@@ -1,4 +1,4 @@
-# 80ms 성공
+# 76ms 성공, 진수 112ms, 유라 148ms
 N, K = map(int, input().split())
 PH = list(input())
 # PH = [0 if x == 'H' else 1 for x in PH]
@@ -14,6 +14,7 @@ while idxP < N:
             if PH[idxH] == 'H':
                 PH[idxH] = 'B'
                 answer += 1
+                idxH += 1
                 break
             idxH += 1
             if idxH >= N:
