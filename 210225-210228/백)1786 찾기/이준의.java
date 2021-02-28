@@ -65,3 +65,5 @@ public class 찾기 {
 ABC ABCDAB ABCDABCDABDE
 ABCDABD
  */
+
+// https://www.youtube.com/watch?v=yWWbLrV4PZ8   <- 갓동빈 설명
