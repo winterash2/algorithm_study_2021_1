@@ -19,7 +19,7 @@ public class 햄버거분배 {
         for(int i = 0; i < n; ++i){
             boolean isHamburg = false;
             if(hamburgs[i] == 'P'){
-                for(int a = i - k; a < i && a >= 0; ++a){
+                for(int a = i - k < 0 ? 0 : i - k; a < i && a >= 0; ++a){
                     if(!check[a] && hamburgs[a] == 'H'){
                         isHamburg = true;
                         check[a] = true;
