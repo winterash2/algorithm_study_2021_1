@@ -6,10 +6,10 @@
 def bf(start):
     for i in range(1, n+1):
         for j in range(1, n+1):
-            for now, cost in graph[j]:
+            for end, cost in graph[j]:
                 
-                if distance[now] > distance[j] + cost:
-                    distance[now] = distance[j] + cost
+                if distance[end] > distance[j] + cost:
+                    distance[end] = distance[j] + cost
                     if i == n:
                         return True
     return False
