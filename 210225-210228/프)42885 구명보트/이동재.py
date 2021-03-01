@@ -24,16 +24,11 @@ def solution(people, limit):
     people.sort()
     idxMin = 0
     idxMax = len(people) - 1
-    while True:
-        if idxMax < idxMin:
-            break
+    while idxMax >= idxMin:
         answer += 1
-        if idxMax == idxMin:
-            break
         if people[idxMax] + people[idxMin] <= limit:
             idxMin += 1
         idxMax -= 1
-        
     return answer
 
 
