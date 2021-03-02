@@ -29,3 +29,23 @@ for i in range(1, len(str2)):
             graph[i][j] = max(graph[i][j-1], graph[i-1][j])
 
 print(graph[len(str2)-1][len(str1)-1])
+
+
+# 백준 모범 답안
+import sys
+
+A = list(str(sys.stdin.readline().rstrip()))
+B = list(str(sys.stdin.readline().rstrip()))
+
+matrix = [0]*len(A)
+
+
+for i in range(len(B)):
+    temp = 0
+    for j in range(len(A)):
+        if matrix[j] > temp:
+            temp = matrix[j]
+        elif A[j] == B[i]:
+            matrix[j] = temp + 1
+
+print(max(matrix))
