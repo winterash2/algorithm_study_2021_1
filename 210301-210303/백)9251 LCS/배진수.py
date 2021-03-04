@@ -12,4 +12,4 @@ for i in range(1,n+1):
         else:
             lcs[i][j] = max(lcs[i][j-1], lcs[i-1][j])
 
-print(lcs[n][m])
+print(lcs)
