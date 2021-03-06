@@ -1,10 +1,38 @@
+# 백준 모범답안
+# 보면 자존심 상함
+op_order = {"-": 1, "+": 1, "*": 2, "/": 2, "(": 0}
+
+ex = input()
+stack = []
+
+for c in ex:
+    if c in op_order.keys():
+        if not stack or c == '(':
+            stack.append(c)
+        else:
+            while stack and op_order[c] <= op_order[stack[-1]]:
+                print(stack.pop(), end='')
+            stack.append(c)
+
+    elif c == ')':
+        while stack and stack[-1] != '(':
+            print(stack.pop(), end='')
+
+        if stack[-1] == '(':
+            stack.pop()
+
+    else:
+        print(c, end='')
+
+while stack:
+    print(stack.pop(), end='')
+
 # 3차 시도 성공
 # 자꾸 틀렸던 이유는 앞에서는 A+B*C 이렇게 연달아 나오는게 제대로 처리가 안 되었었음
 string = list(input())
 
 
 def conversion(string):
-    gualho = False
     # 괄호 먼저 다 제거
     while True:
         exist = False
@@ -13,7 +41,6 @@ def conversion(string):
         end = -1
         for i in range(len(string)):
             if string[i] is not list and string[i] == '(':
-                gualho = True
                 exist = True
                 depth += 1
                 if start == -1:
