@@ -1,6 +1,28 @@
+import sys
+input = sys.stdin.readline
+
+N, M = map(int, input().split())
+mems = list(map(int, input().split()))
+costs = list(map(int, input().split()))
+maxCost = sum(costs)
+dp = [0 for _ in range(maxCost+1)]
+
+for idx in range(N):
+    mem = mems[idx]
+    cost = costs[idx]
+    for i in range(maxCost-cost, -1, -1):
+        dp[i+cost] = max(dp[i+cost], dp[i] + mem)
+
+for idx in range(maxCost+1):
+    if dp[idx] >= M:
+        print(idx)
+        break
+
+
 # dp를 1부터 M까지 탐색하지 않고 요소가 있는 부분만을 탐색하려고 visited라는 이름의 set을 이용
 # 메모리 초과 남
 # visited 사용 안 하고 dp를 전부 돌면서 M번 돌아가게 하면 시간초과남
+"""
 import sys
 input = sys.stdin.readline
 
@@ -24,6 +46,7 @@ for idx in range(N):
     visited = visited | add_visited
 
 print(dp[M])
+"""
 
 # 재귀로 푼 것
 # 시간 초과 뜸
