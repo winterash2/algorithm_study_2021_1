@@ -22,3 +22,5 @@ if m != 0:
     print(result)
 else:
     print(0)
+
+# https://claude-u.tistory.com/445
