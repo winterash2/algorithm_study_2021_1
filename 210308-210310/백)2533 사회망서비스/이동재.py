@@ -1,3 +1,5 @@
+# 준의야 이거 진짜 어렵다...
+# 너가 다음에 설명해주길 바래...
 import sys
 input = sys.stdin.readline
 
@@ -13,14 +15,14 @@ for _ in range(N-1):
 dp = [[0, 0] for _ in range(N+1)]
 
 q = [1]
-for elem in q:
+for elem in q: # 트리의 뒤에 있는게 먼저 실행될 수 있도록 일단은 정방향으로 전부 넣음
     visited[elem] = True
     for f in tree[elem]:
         if visited[f]:
             continue
         q.append(f)
 
-q = q[::-1]
+q = q[::-1] # 정방향으로 넣은걸 뒤집으면 트리의 아래에 있는 요소부터 처리
 for id in q:
     dp[id][0] = 0
     dp[id][1] = 1
