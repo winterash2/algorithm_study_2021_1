@@ -7,8 +7,6 @@ def bf(start):
     for i in range(1, n+1):
         for j in range(1, n+1):
             for end, cost in graph[j]:
-                print("-----end:", end, ", j:", j, ", i:",i)
-
                 if distance[end] > distance[j] + cost:
                     print(distance)
                     distance[end] = distance[j] + cost

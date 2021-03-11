@@ -32,7 +32,6 @@ for c in s:
 
         else:
             # 우선순위 비교
-            # 왜 스택빌때까지. . .? 
             while stack:
                 if operator[stack[-1]] >= operator[c]:
                     temp = stack.pop()
