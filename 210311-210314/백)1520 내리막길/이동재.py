@@ -11,25 +11,7 @@ for x in range(N):
         blocks.append((table[y][x], x, y))
 blocks.sort()
 
-def calc(table, x, y):
-    q = [(x, y)]
-    answer = 0
-    while q:
-        x, y = q.pop()
-        # print(x, y)
-        if x == N-1 and y == M-1:
-            answer += 1
-            continue
-        for d in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
-            nx = x + d[0]
-            ny = y + d[1]
-            if 0 <= nx < N and 0 <= ny < M:
-                if table[ny][nx] < table[y][x]:
-                    q.append((nx, ny))
-    return answer
-
 dp = [[0 for _ in range(N)] for _ in range(M)]
-
 for block in blocks:
     val, x, y = block
     if x == N-1 and y == M-1:
