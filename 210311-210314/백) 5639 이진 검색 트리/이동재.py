@@ -1,3 +1,37 @@
+# 2차로 한 것에 이진탐색을 접목시킴
+# 성공. 812ms
+from collections import deque
+from bisect import bisect_left
+import sys
+input = sys.stdin.readline
+
+arr = []
+while True:
+    try:
+        arr.append(int(input()))
+    except:
+        break
+
+answer = []
+q = deque()
+q.append(arr)
+while q:
+    arr = q.popleft()
+    if len(arr) <= 1:
+        answer = answer + arr
+        continue
+    root = arr[0]
+    arr = arr[1:]
+    idx = bisect_left(arr, root)
+    left = arr[:idx]
+    right = arr[idx:]
+
+    q.appendleft([root])
+    q.appendleft(right)
+    q.appendleft(left)
+
+[print(x) for x in answer]
+
 # 2차 deque로 푼 것
 # 이것도 시간 초과 뜸
 """
@@ -72,5 +106,4 @@ def loop(arr):
 
 answer = loop(arr)
 [print(x) for x in answer]
-
 """
