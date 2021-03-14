@@ -1,4 +1,5 @@
 # http://boj.kr/2579
+# 마지막 계단 확인
 from collections import deque
 n = int(input())
 stairs = []
@@ -22,18 +23,17 @@ dp[0] = (stairs[0][0], 2)
 q.append(dp[0])
 max_value = -int(1e9)
 i = 0
+
 while q:
-    print("-----")
-    print(q)
     value, step = q.popleft()
     if i+2 >= n:
         continue
     value_1, step_1 = dp[i+1]
     value_2, step_2 = dp[i+2]
-    print("value1", value_1, "step1:", step_1)
-    print("stairs 2칸뒤", stairs[i+2][0])
+
     dp[i+2] = (max(value_2, value + stairs[i+2][0]), 2)
     q.append(dp[i+2])
+
     if i+2 == n-1:
         max_value = max(max_value, dp[i+2][0])
     if step == 2:
@@ -44,15 +44,4 @@ while q:
     i+= 1
 
 
-# for i in range(n):
-#     now, cnt = dp[i]
-#     if i+2 >= n or i+1 >= n:
-#         continue
-
-#     step_1, cnt_1 = dp[i+1]
-#     step_2, cnt_2 = dp[i+2]
-#     dp[i+2] = (max(step_2, now + stairs[i][0]), 2)
-#     if cnt == 2:
-#         dp[i+1] = (max(step_1, now + stairs[i+1][0]), 1)
-    
 print(max_value)
