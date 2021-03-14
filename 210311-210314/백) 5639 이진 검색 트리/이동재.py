@@ -1,5 +1,6 @@
 # 2차로 한 것에 이진탐색을 접목시킴
 # 성공. 812ms
+# 진수꺼 설명 듣기
 from collections import deque
 from bisect import bisect_left
 import sys
