@@ -15,7 +15,7 @@ public class 열쇠 {
 
     static int[] dx = {0, 0, 1, -1};
     static int[] dy = {-1, 1, 0, 0};
-    static boolean[] key = new boolean[26];
+    static boolean[] key;
     static boolean[][] visit;
 
 
@@ -49,7 +49,7 @@ public class 열쇠 {
                     map[i][j] = input.charAt(j);
                 }
             }
-
+            key = new boolean[26];
             // 열쇠 입력받기
             String keys = br.readLine();
             for(int i = 0; i < keys.length(); ++i){
@@ -73,6 +73,16 @@ public class 열쇠 {
                             q.offer(new Location(enterX, enterY));
                             visit[enterX][enterY] = true;
                         } else if(map[enterX][enterY] == '.'){
+                            q.offer(new Location(enterX, enterY));
+                            visit[enterX][enterY] = true;
+                        } else if(Character.isLowerCase(map[enterX][enterY])){
+                            key[map[enterX][enterY] - 'a'] = true;
+                            map[enterX][enterY] = '.';
+                            q.offer(new Location(enterX, enterY));
+                            visit[enterX][enterY] = true;
+                        } else if(map[enterX][enterY] == '$'){
+                            map[enterX][enterY] = '.';
+                            answer++;
                             q.offer(new Location(enterX, enterY));
                             visit[enterX][enterY] = true;
                         }
