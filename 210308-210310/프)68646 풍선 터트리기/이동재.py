@@ -21,7 +21,6 @@ def solution(a):
             pass
         else:
             answer += 1
-
     return answer
 
 a = [-16,27,65,-2,58,-92,-71,-68,-61,-33]

@@ -55,4 +55,3 @@ def bfs(tail, head):
 
 bfs(tail, head)
 print(cnt)
-    
