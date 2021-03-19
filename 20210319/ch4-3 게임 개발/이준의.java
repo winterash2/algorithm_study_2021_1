@@ -43,11 +43,12 @@ public class 복습_게임개발 {
         boolean check = true;
         visit[cx][cy] = true;
         while(true){
-            for(int i = 0; i < 4; ++i){
-                // 0 -> 3 -> 2 -> 1 -> 0
+            for(int i = 0; i < 5; ++i){
+                // 0 -> 3 -> 2 -> 1 -> 0 -> 3
                 direc = direc - 1 < 0 ? 3 : direc - 1;
-                if(i == 3){
+                if(i == 4){
                     // 4번째 돌았을때
+                    direc = direc + 1 > 3 ? 0 : direc + 1;
                     int nx = cx - dx[direc];
                     int ny = cy - dy[direc];
                     if(map[nx][ny] == 1){
@@ -85,5 +86,20 @@ public class 복습_게임개발 {
 1 0 0 1
 1 1 0 1
 1 1 1 1
+
+
+11 10
+7 4 0
+1 1 1 1 1 1 1 1 1 1
+1 0 0 0 0 0 0 0 0 1
+1 0 0 0 1 1 1 1 0 1
+1 0 0 1 1 0 0 0 0 1
+1 0 1 1 0 0 0 0 0 1
+1 0 0 0 0 0 0 0 0 1
+1 0 0 0 0 0 0 1 0 1
+1 0 0 0 0 0 1 1 0 1
+1 0 0 0 0 0 1 1 0 1
+1 0 0 0 0 0 0 0 0 1
+1 1 1 1 1 1 1 1 1 1
  */
 
