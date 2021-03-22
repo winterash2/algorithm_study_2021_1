@@ -1,4 +1,32 @@
+T = list(input())
+P = list(input())
+
+KMP = [0 for _ in range(len(P))]
+
+idx = 0
+for i in range(1, len(P)):
+    while idx > 0 and P[i] != P[idx]:
+        idx = KMP[idx-1]
+    if P[i] == P[idx]:
+        idx += 1
+        KMP[i] = idx
+
+for i in range(len(T)):
+    
+
+
+"""
+ABC ABCDAB ABCDABCDABDE
+ABCDABD
+"""
+"""
+ABCDABDABCDABD
+ABCDABD
+"""
+
+
 # 시간 초과....ㅠ
+"""
 T = list(input())
 P = list(input().strip())
 pLen = len(P)
@@ -22,13 +50,4 @@ for i in range(len(T)):
 
 print(len(answer))
 print(' '.join(map(str, answer)))
-
-
-"""
-ABC ABCDAB ABCDABCDABDE
-ABCDABD
-"""
-"""
-ABCDABDABCDABD
-ABCDABD
 """

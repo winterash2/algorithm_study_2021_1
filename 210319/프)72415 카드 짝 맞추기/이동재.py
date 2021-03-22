@@ -29,6 +29,7 @@ def solution(board, r, c):
             if board[i][j]:
                 loc[board[i][j]].append((i, j))
     minv = 100
+    [print(x) for x in filter(lambda v: v, loc.values())]
     for p in permutations(filter(lambda v: v, loc.values())):
         sumv = 0
         xys = [(r, c)]
