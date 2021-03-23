@@ -11,6 +11,7 @@ from itertools import combinations
 import sys
 input = sys.stdin.readline
 
+# dfs로 선거구 선정하려했는데 fail
 # def dfs(nnow, now_cnt, area_cnt):
 #     global most_min
 #     queue = deque([(nnow, now_cnt)])
