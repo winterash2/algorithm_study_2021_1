@@ -1,4 +1,28 @@
+# 정확성  테스트
+# 테스트 1 〉	통과 (0.07ms, 10.4MB)
+# 테스트 2 〉	통과 (3.67ms, 10.8MB)
+# 테스트 3 〉	통과 (5.32ms, 10.7MB)
+# 테스트 4 〉	통과 (0.04ms, 10.6MB)
+# 테스트 5 〉	통과 (0.59ms, 10.5MB)
+# 테스트 6 〉	통과 (0.67ms, 10.4MB)
+# 테스트 7 〉	통과 (2.93ms, 10.6MB)
+# 테스트 8 〉	통과 (3.21ms, 10.7MB)
+# 테스트 9 〉	통과 (0.47ms, 10.4MB)
+# 테스트 10 〉	통과 (0.07ms, 10.4MB)
+# 테스트 11 〉	통과 (0.08ms, 10.4MB)
+# 테스트 12 〉	통과 (3.52ms, 10.7MB)
+# 테스트 13 〉	통과 (0.69ms, 10.4MB)
+# 테스트 14 〉	통과 (0.04ms, 10.3MB)
+# 테스트 15 〉	통과 (0.04ms, 10.4MB)
+# 테스트 16 〉	통과 (0.05ms, 10.4MB)
+# 테스트 17 〉	통과 (0.04ms, 10.4MB)
+# 테스트 18 〉	통과 (9.95ms, 11MB)
+# 테스트 19 〉	통과 (6.83ms, 10.9MB)
+# 테스트 20 〉	통과 (7.53ms, 10.9MB)
+# 테스트 21 〉	통과 (0.03ms, 10.4MB)
+# 테스트 22 〉	통과 (0.03ms, 10.5MB)
 from bisect import bisect_left
+
 
 def solution(lines):
     lines_orig = [x for x in lines]
@@ -52,11 +76,13 @@ def solution(lines):
     stack = []
     count = 0
     for line in lines:
+        print("line", line)
         start, end = line
         while stack and stack[0] < start:
             stack = stack[1:]
             count -= 1
         stack.insert(bisect_left(stack, end), end)
+        print(stack)
         count += 1
         answer = max(answer, count)
 
@@ -69,6 +95,8 @@ lines = [
     "2016-09-15 01:00:04.002 2.0s",
     "2016-09-15 01:00:07.000 2s"
 ]
+lines = ["2016-09-15 00:00:03.000 3s",
+         "2016-09-15 00:00:03.000 2s", "2016-09-15 00:00:03.000 1s"]
 print(solution(lines))
 
 
