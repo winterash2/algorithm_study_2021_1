@@ -10,8 +10,6 @@ def solution(lines):
         date_time = y + ' ' + t
         time = datetime.strptime(date_time, '%Y-%m-%d %H:%M:%S.%f')
         date_list.append((time - timedelta(seconds=need), time))
-        print(time - timedelta(seconds=need))
-        print(time)
     date_list.sort(key=lambda x: x[1])
 
     for x in date_list:
@@ -20,9 +18,9 @@ def solution(lines):
         cnt2 = 0
         for y in date_list:
             ss, ee = y
-            if start <= ss <= start + timedelta(seconds=0.999) or start <= ee <= start + timedelta(seconds=1):
+            if start <= ss <= start + timedelta(seconds=0.999) or start <= ee <= start + timedelta(seconds=0.999):
                 cnt1 += 1
-            if end <= ss <= end + timedelta(seconds=0.999) or end <= ee <= end + timedelta(seconds=1):
+            if end <= ss <= end + timedelta(seconds=0.999) or end <= ee <= end + timedelta(seconds=0.999):
                 cnt2 += 1
             
         answer = max(answer, cnt1, cnt2)
@@ -50,7 +48,8 @@ lines = [
 
 lines = ["2016-09-15 01:00:04.001 2.0s", "2016-09-15 01:00:07.000 2s"]
 lines = ["2016-09-15 01:00:04.002 2.0s", "2016-09-15 01:00:07.000 2s"]
-
+lines = ["2016-09-15 00:00:03.000 3s",
+         "2016-09-15 00:00:03.000 2s", "2016-09-15 00:00:03.000 1s"]
 print(solution(lines))
 
 """
