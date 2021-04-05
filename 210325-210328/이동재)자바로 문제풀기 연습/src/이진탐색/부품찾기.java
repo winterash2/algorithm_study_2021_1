@@ -1,3 +1,5 @@
+package 이진탐색;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;

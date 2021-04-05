@@ -1,3 +1,5 @@
+package DP;
+
 import java.util.Scanner;
 
 public class 일로만들기 {

@@ -1,3 +1,5 @@
+package 그리디;
+
 import java.security.KeyStore;
 import java.util.Scanner;
 

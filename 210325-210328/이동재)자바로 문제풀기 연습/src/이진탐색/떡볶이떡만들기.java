@@ -1,3 +1,5 @@
+package 이진탐색;
+
 import java.util.Scanner;
 
 public class 떡볶이떡만들기 {

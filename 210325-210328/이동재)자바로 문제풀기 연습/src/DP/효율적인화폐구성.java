@@ -1,3 +1,5 @@
+package DP;
+
 import java.util.Scanner;
 
 public class 효율적인화폐구성 {
